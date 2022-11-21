@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>ころくる</title>
+<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+<meta name="Keywords" content="キーワード,キーワード,キーワード" />
+<link rel="icon" href="https://saetl.net/favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" type="img/x-icon" href="https://saetl.net/favicon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/mixitup.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+</head>
+
+<body>
+
+
+<!--　ヘッダー　-->
+
+<div id="header">
+  
+  <!-- ロゴ　-->
+  <div id="logo">
+    <a href="index.html">ころくる</a> <!-- / #logo -->
+  </div>
+  
+  <!--　ナビゲーションメニュー  -->
+  
+  <div id="menu">
+    <a href="index.html">home</a> 
+    <a href="categoriesA.html">All</a>
+    <a href="categories1.html">あ / か</a>
+    <a href="categories2.html">さ / た</a>
+    <a href="categories3.html">な / は</a> 
+    <a href="categories4.html">ま / や / ら</a>
+
+
+    <!-- / #menu -->
+  </div>
+  
+  <!-- / #header -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ここからメインの内容　-->
+
+<div id="container">
+  <div id="content">
+  
+    <h1>ALL</h1>
+    
+    <div class="controls just">
+      <div class="group" id="Sorts">
+        <div class="button active" id="ToList">
+          <i></i>詳細
+        </div>
+        <div class="button" id="ToGrid">
+          <i></i>画像
+        </div>
+      </div>
+      <div class="group" id="Filters">
+       
+
+      </div>
+    </div>
+    <ul id="Parks" class="just">
+      <div class="list_header">
+        <div class="meta name active desc" id="SortByName">
+          <div class="middle">
+            ボール
+          </div>
+          <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
+        </div>
+      
+        <div class="meta area" id="SortByArea">
+          <div class="middle">
+            直径
+          </div>
+          <span class="sort anim150 asc" data-sort="data-area" data-order="asc"></span> <span class="sort anim150 desc" data-sort="data-area" data-order="desc"></span>
+        </div>
+      </div>
+      <div class="fail_element anim250">
+        申し訳ありませんが、一致する条件を見つけることができませんでした。
+      </div>
+
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="7.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/ice.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>アイスホッケー</h2>
+            <p><em>パック、156~170g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.62cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="27.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/amefut.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>アメリカンフットボール</h2>
+            <p><em>397~425g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>27.6~29.1cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B22222" data-name="商品A" data-area="5.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/uiful.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ウィッフルボール</h2>
+            <p><em>24g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>5.5〜7cm</p>
+        </div>
+      </li>
+
+
+      <li class="mix A44444 B11111 B33333" data-name="商品E" data-area="29.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/karing.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>カーリング</h2>
+            <p><em>ストーン、1700~2000g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>29cm</p>
+        </div>
+      </li>
+
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/kuri.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>クリケット</h2>
+            <p><em>クリケットボール、150g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gate.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ゲートボール</h2>
+            <p><em>230g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.5cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B33333" data-name="商品F" data-area="4.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/golf.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ゴルフ</h2>
+            <p><em>ゴルフボール、45.93g以下</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>4.267cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B11111 B33333" data-name="商品B" data-area="22.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/basket01.PNG" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>コーフボール</h2>
+            <p><em>バスケットボールを使用</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>22cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="21.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/suikyu.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>水球</h2>
+            <p><em>400~450g、ゴム製<br>
+              女子21cm<br>
+              男子22cm</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>21~22cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="テニス1" data-area="13.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/sepa.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>セパタクロー</h2>
+            <p><em>セパタクローのボール<br>
+              男子13.5cm,170~180g<br>
+              女子14cm,150~160g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>13.5~14cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="テニス1" data-area="8.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/soft.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ソフトボール</h2>
+            <p><em>1号球8.5cm,141g<br>
+                   2号球9.1cm,163g<br>
+                   3号球9.7cm,(ゴム)190g(皮)187.8g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>8.5~9.7cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="4.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/pin.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>卓球</h2>
+            <p><em>ピンポン玉、2.7g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>4cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="テニス1" data-area="7.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/tball.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ティーボール</h2>
+            <p><em>9インチ7.25cm,68g<br>
+              11インチ9.1cm,75g<br>
+              12インチ9.7cm,98g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.25~9.7cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B22222" data-name="商品A" data-area="6.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/tennis01.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>テニス（硬式）</h2>
+            <p><em>硬球56~59.4g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>6.54〜6.86cm</p>
+        </div>
+      </li>
+      
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="テニス1" data-area="6.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/tennis02.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>テニス（軟式）</h2>
+            <p><em>軟球30~31g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>6.6cm</p>
+        </div>
+      </li>
+
+      <li class="mix A44444 B11111 B33333" data-name="商品E" data-area="20.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/dogge02.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ドッジボール</h2>
+            <p><em>3号球380g(小学生用)320~340g<br>
+            </em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>20.69~21.33cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="22">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="tennis01" src="images/tennis01.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ネットボール</h2>
+            <p><em>Subtitle</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>22cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="20.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="tennis01" src="images/volley01.PNG"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>バレーボール</h2>
+            <p><em>5号球(一般・大学・高校用)20cm,260～280g<br>
+               4号球(中学校・ママさんバレー用）20cm,240～260g<br>
+               4号軽量球(小学生用)20cm,200～220g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>20cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="16.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/hand.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ハンドボール</h2>
+            <p><em>1号球(小学生用)16cm,255~280g<br>
+              2号球(中学生、高校生以上の女子用)18cm,325~375g<br>
+              3号球(高校生以上の男子用)19cm,425~475g<br>
+            </em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>16~19cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/volley03.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ビーチバレー</h2>
+            <p><em>Subtitle</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>22cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="22.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/soccer01.PNG" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ビーチサッカー</h2>
+            <p><em>Subtitle</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>22cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="5.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/futba.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>フットバック</h2>
+            <p><em>ハッキーサック<br>
+                中身がペレット(プラスチックの粒)、サンド(砂)、(金属の粒)の3種類ある</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>5cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="15.9">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/hedisu.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>へディス</h2>
+            <p><em>100gの専用ゴム製ボール</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>15.9cm</p>
+        </div>
+      </li>
+      
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="8.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/shotput.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>砲丸投げ</h2>
+            <p><em>砲丸、中学生女子8.5~9.5cm,2721g<br>
+                高校女子・一般女子9.5~11cm,4000g<br>
+                中学男子10~12cm,5000g<br>
+                高校男子10.5~12.5cm,6000g<br>
+                一般男子11~13cm,7260g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>8.5~13cm</p>
+        </div>
+      </li>
+      
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/hoke.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ホッケー(フィールドホッケー)</h2>
+            <p><em>156~163g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.29~7.48cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="10.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/mari.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>毬(まり)</h2>
+            <p><em>毬、100g程度</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>10~16cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="20.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/multi.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>マルチボール</h2>
+            <p><em>布製</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>20cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="6.8">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="base01" src="images/base01.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>野球（軟式）</h2>
+            <p><em>J号(小学生)6.85~6.95cm,128~131g<br>
+                M号(一般、中学生)7.15~7.25cm,136~139g<br>
+                H号(大学生)7.15~7.25cm,141~144g
+            </em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>6.85~7.25cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B22222" data-name="商品A" data-area="7.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="base01" src="images/base02.png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles"> 
+            <h2>野球（硬式）</h2>
+            <p><em>141~148g、小学生~プロまで同じ</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.29〜7.48cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="27.0">
+            <div class="meta name">
+              <div class="img_wrapper">
+                <img src="images/ragu.png" onload="imgLoaded(this)"/>
+              </div>
+              <div class="titles">
+                <h2>ラグビー</h2>
+                <p><em>4号球27~29cm,380~400g<br>
+                    5号球28~30cm,410~460g</em></p>
+              </div>
+            </div>
+            <div class="meta area">
+              <p>27~30cm</p>
+            </div>
+       </li>
+
+    </ul>
+    
+    <!-- / #content -->
+  </div>
+  
+  <!-- / #container -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ページの下部分　-->
+<div id="footer">
+  <p>Copyright(C) 2013 サイト名 All Rights Reserved. </p>
+  <!-- / #footer -->
+</div>
+
+</body>
+</html>

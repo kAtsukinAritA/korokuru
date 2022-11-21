@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>ころくる</title>
+<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+<meta name="Keywords" content="キーワード,キーワード,キーワード" />
+<link rel="icon" href="https://saetl.net/favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" type="img/x-icon" href="https://saetl.net/favicon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/mixitup.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+</head>
+
+<body>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+
+<!--　ヘッダー　-->
+
+<div id="header">
+  
+  <!-- ロゴ　-->
+  <div id="logo">
+    <a href="index.html">ころくる</a> <!-- / #logo -->
+  </div>
+  
+  <!--　ナビゲーションメニュー  -->
+  
+  <div id="menu">
+    <a href="index.html">home</a> 
+    <a href="categoriesA.html">All</a>
+    <a href="categories1.html">あ / か</a>
+    <a href="categories2.html">さ / た</a>
+    <a href="categories3.html">な / は</a> 
+    <a href="categories4.html">ま / や / ら</a>
+
+    <!-- / #menu -->
+  </div>
+  
+  <!-- / #header -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ここからメインの内容　-->
+
+<div id="container">
+  <div id="content">
+  
+    <h1>あ ~ こ</h1>
+    
+    <div class="controls just">
+      <div class="group" id="Sorts">
+        <div class="button active" id="ToList">
+          <i></i>詳細
+        </div>
+        <div class="button" id="ToGrid">
+          <i></i>画像
+        </div>
+      </div>
+      <div class="group" id="Filters">
+       
+
+      </div>
+    </div>
+    <ul id="Parks" class="just">
+      <div class="list_header">
+        <div class="meta name active desc" id="SortByName">
+          <div class="middle">
+            ボール
+          </div>
+          <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
+        </div>
+      
+        <div class="meta area" id="SortByArea">
+          <div class="middle">
+            直径
+          </div>
+          <span class="sort anim150 asc" data-sort="data-area" data-order="asc"></span> <span class="sort anim150 desc" data-sort="data-area" data-order="desc"></span>
+        </div>
+      </div>
+      <div class="fail_element anim250">
+        申し訳ありませんが、一致する条件を見つけることができませんでした。
+      </div>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="7.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/tennis01.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>アイスホッケー</h2>
+            <p><em>パック、156~170g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.62cm</p>
+        </div>
+      </li>
+
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="商品C" data-area="27.6">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/tennis01.png"/>
+          </div>
+          <div class="titles">
+            <h2>アメリカンフットボール</h2>
+            <p><em>397~425g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>27.6~29.1cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B22222" data-name="商品A" data-area="5.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/2.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ウィッフルボール</h2>
+            <p><em>24g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>5.5〜7cm</p>
+        </div>
+      </li>
+
+
+      <li class="mix A44444 B11111 B33333" data-name="商品E" data-area="29.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/3.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>カーリング</h2>
+            <p><em>ストーン、1700~2000g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>29cm</p>
+        </div>
+      </li>
+
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/4.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>クリケット</h2>
+            <p><em>クリケットボール、150g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="商品D" data-area="7.5">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/4.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ゲートボール</h2>
+            <p><em>230g</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>7.5cm</p>
+        </div>
+      </li>
+      <li class="mix A11111 B11111 B33333" data-name="商品F" data-area="4.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/5.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>ゴルフ</h2>
+            <p><em>ゴルフボール、45.93g以下</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>4.267cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B11111 B33333" data-name="商品B" data-area="22.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/gallery/6.jpg" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>コーフボール</h2>
+            <p><em>バスケットボールを使用</em></p>
+          </div>
+        </div>
+        <div class="meta area">
+          <p>22cm</p>
+        </div>
+      </li>
+    </ul>
+    
+    <!-- / #content -->
+  </div>
+  
+  <!-- / #container -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ページの下部分　-->
+<div id="footer">
+  <p>Copyright(C) 2013 サイト名 All Rights Reserved. </p>
+  <!-- / #footer -->
+</div>
+
+</body>
+</html>
