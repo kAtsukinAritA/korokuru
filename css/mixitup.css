@@ -499,16 +499,16 @@
 }
  @media (max-width: 1000px) {
  #Parks.list .meta {
- width: 150px;
+ width: 300px;
 }
  #Parks.list .titles {
  width: 150px;
 }
- @media (max-width: 840px) {
+ @media (max-width: 500px) {
  #Parks.list .meta.region, #Parks.list .meta.categoryB {
  display: none;
 }
- @media (max-width: 540px) {
+ @media (max-width: 500px) {
  #Parks.list .meta.area {
  display: none;
 }
