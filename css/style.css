@@ -170,3 +170,24 @@ h1 {
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
+
+
+.message {
+    position: sticky;
+}
+.message span.remark {
+    display: none;
+}
+.message a:hover span.remark {
+    background: none repeat scroll 0 0 #EEFFEE;
+    border: 2px solid #CCCCCC;
+    color: #000000;
+    display: block;
+    line-height: 2em;
+    margin: 10em;
+    padding: 2em;
+    position: absolute;
+    top: 200px;
+    width: 12em;
+}
+
