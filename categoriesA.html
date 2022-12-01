@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 </head>
@@ -33,13 +34,16 @@
   <!--　ナビゲーションメニュー  -->
   
   <div id="menu">
-    <a href="index.html">home</a> 
-    <a href="categoriesA.html">All</a>
-    <a href="categories1.html">あ / か</a>
-    <a href="categories2.html">さ / た</a>
-    <a href="categories3.html">な / は</a> 
-    <a href="categories4.html">ま / や / ら</a>
-
+    <div class="menuA">
+      <a href="index.html">home</a> 
+      <a href="categoriesA.html">All</a>
+      </div>
+      <div class="menuB">
+      <a href="categories1.html">あ/か</a>
+      <a href="categories2.html">さ/た</a>
+      <a href="categories3.html">な/は</a> 
+      <a href="categories4.html">ま/や/ら</a>
+      </div>
 
     <!-- / #menu -->
   </div>
@@ -73,6 +77,7 @@
 
       <ul id="Parks" class="just">
         <div class="list_header">
+
           <div class="meta name active desc" id="SortByName">
             <div class="middle">
               競技名
@@ -81,8 +86,9 @@
           </div>
 
           <div class="meta categoryA">
-            詳細(重さやサイズ規格など)
+             詳細(重さやサイズ規格など)            
           </div>
+
           <div class="meta area" id="SortByArea">
             <div class="middle">
               直径
@@ -90,6 +96,8 @@
             <span class="sort anim150 asc" data-sort="data-area" data-order="asc"></span> <span class="sort anim150 desc" data-sort="data-area" data-order="desc"></span>
           </div>
         </div>
+
+
         <div class="fail_element anim250">
           申し訳ありませんが、一致する条件を見つけることができませんでした。
         </div>
@@ -103,8 +111,9 @@
             <h2>アイスホッケー</h2>
             <p><em>パック</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.jihf.or.jp/knowledge/tools.php">アイスホッケー基礎知識</a><br>
-            <p><em>日本アイスホッケー連盟サイト</em></p>
+            <p class="sm">日本アイスホッケー連盟サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -124,8 +133,9 @@
             <h2>アメリカンフットボール</h2>
             <p><em>アメリカンフットボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://panasonic.co.jp/ew/go-go-impulse/cheer/cheermanual/beginner/rule/index.html">アメリカンフットボール　ルール</a><br>
-            <p><em>Panasonicサイト</em></p>
+            <p class="sm">Panasonicサイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -145,8 +155,9 @@
             <h2>ウィッフルボール</h2>
             <p><em>ウィッフルボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.gh-japan.co.jp/wiffle-lp/">ウィッフルボールとは</a><br>
-            <p><em>WIFFLE Ball(ウィッフルボール)サイト</em></p>
+            <p class="sm">WIFFLE Ball(ウィッフルボール)サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -167,8 +178,9 @@
             <h2>カーリング</h2>
             <p><em>ストーン</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www3.nhk.or.jp/sports/story/1424/">カーリング基本ルール</a><br>
-            <p><em>NHKsportsサイト</em></p>
+            <p class="sm">NHKsportsサイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -189,8 +201,9 @@
             <h2>クリケット</h2>
             <p><em>クリケットボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://cricket.or.jp/about-cricket">クリケットとは</a><br>
-            <p><em>日本クリケット協会サイト</em></p>
+            <p class="sm">日本クリケット協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -210,8 +223,9 @@
             <h2>ゲートボール</h2>
             <p><em>ゲートボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://gateball.or.jp/play/play_01.html">ゲートボールとは</a><br>
-            <p><em>日本ゲートボール連合サイト</em></p>
+            <p class="sm">日本ゲートボール連合サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -231,8 +245,9 @@
             <h2>ゴルフ</h2>
             <p><em>ゴルフボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.rere.jp/beginners/4584/">ゴルフ基本ルール</a><br>
-            <p><em>ビギナーズ</em></p>
+            <p class="sm">ビギナーズ></p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -252,8 +267,9 @@
             <h2>コーフボール</h2>
             <p><em>バスケットボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://korfball.jp/rule/">コーフボール　ルール</a><br>
-            <p><em>日本コーフボール協会</em></p>
+            <p class="sm">日本コーフボール協会</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -274,8 +290,9 @@
             <h2>サッカー</h2>
             <p><em>サッカーボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.jfa.jp/rule/">サッカー　ルール</a><br>
-            <p><em>日本サッカー協会サイト</em></p>
+            <p class="sm">日本サッカー協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -296,8 +313,9 @@
             <h2>水球</h2>
             <p><em>水球のボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://swim.or.jp/wp/">水球について</a><br>
-            <p><em>日本水泳連盟サイト</em></p>
+            <p class="sm">日本水泳連盟サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -319,8 +337,9 @@
             <h2>セパタクロー</h2>
             <p><em>セパタクローのボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="http://jstaf.jp/sepa/sepa.html">セパタクローについて</a><br>
-            <p><em>日本セパタクロー協会サイト</em></p>
+            <p class="sm">日本セパタクロー協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -341,8 +360,9 @@
             <h2>ソフトボール</h2>
             <p><em>ソフトボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://sposuru.com/contents/sports-quest/softball-rule/">ソフトボール　ルール</a><br>
-            <p><em>スポスルマガジン</em></p>
+            <p class="sm">スポスルマガジン</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -365,8 +385,9 @@
             <h2>卓球</h2>
             <p><em>ピンポン玉</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://jtta.or.jp/rule">卓球　基本ルール</a><br>
-            <p><em>日本卓球協会サイト</em></p>
+            <p class="sm">日本卓球協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -386,8 +407,9 @@
             <h2>ティーボール</h2>
             <p><em>ティーボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="http://www.teeball.com/aboutteeball/">ティーボールとは</a><br>
-            <p><em>日本ティーボール協会</em></p>
+            <p class="sm">日本ティーボール協会</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -409,8 +431,9 @@
             <h2>テニス（硬式）</h2>
             <p><em>硬球</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.tennisuniverse.co.jp/start/for_general/basic_info.php">テニス基本ルール</a><br>
-            <p><em>テニスユニバース</em></p>
+            <p class="sm">テニスユニバース</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -430,8 +453,9 @@
             <h2>テニス（軟式、ソフトテニス）</h2>
             <p><em>軟球</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://sports.dunlop.co.jp/softtennis/about/guide_basic.html">ソフトテニス基本ルール</a><br>
-            <p><em>DUNLOP SOFT TENNIS NAVI</em></p>
+            <p class="sm">DUNLOP SOFT TENNIS NAVI</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -451,8 +475,9 @@
             <h2>ドッジボール</h2>
             <p><em>ドッジボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://www.dodgeball.or.jp/%E3%83%89%E3%83%83%E3%82%B8%E3%83%9C%E3%83%BC%E3%83%AB%E3%81%A8%E3%81%AF/">ドッジボールとは</a><br>
-            <p><em>日本ドッジボール協会</em></p>
+            <p class="sm">日本ドッジボール協会</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -474,8 +499,9 @@
             <h2>ネットボール</h2>
             <p><em>ネットボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="http://netball.jp/rule.html">ネットボール　ルール</a><br>
-            <p><em>日本ネットボール協会</em></p>
+            <p class="sm">日本ネットボール協会</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -497,9 +523,9 @@
             <h2>バスケットボール</h2>
             <p><em>バスケットボール</em></p><br>
             <br>
+            <hr class="style-two">
             <a href="https://kawasaki-bravethunders.com/watching/rule/">バスケットボール基本ルール</a><br>
-            <p><em>川崎ブレイブサンダース</em></p>
-          </div>
+            <p class="sm">川崎ブレイブサンダース</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -519,7 +545,11 @@
           </div>
           <div class="titles">
             <h2>バドミントン</h2>
-            <p><em>シャトル</em></p>
+            <p><em>シャトル</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.jsports.co.jp/badminton/about/rule/">バドミントン基本ルール</a><br>
+            <p class="sm">J SPORTS</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -539,7 +569,11 @@
           </div>
           <div class="titles">
             <h2>バレーボール</h2>
-            <p><em>バレーボール</em></p>
+            <p><em>バレーボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.jva.or.jp/play/beginner.html">バレーボール基本ルール</a><br>
+            <p class="sm">日本バレーボール協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -559,7 +593,11 @@
           </div>
           <div class="titles">
             <h2>ハンドボール</h2>
-            <p><em>ハンドボール</em></p>
+            <p><em>ハンドボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://japanhandballleague.jp/guide/rule/">ハンドボール基本ルール</a><br>
+            <p class="sm">日本ハンドボールリーグ</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -579,8 +617,11 @@
           </div>
           <div class="titles">
             <h2>ビーチバレー</h2>
-            <p><em>ビーチバレーボール</em></p>
-            
+            <p><em>ビーチバレーボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.jva.or.jp/play/beginner.html">バレーボール基本ルール</a><br>
+            <p class="sm">日本バレーボール協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -598,11 +639,11 @@
           </div>
           <div class="titles">
             <h2>ビーチサッカー</h2>
-            <p><em>ビーチサッカーボール</em></p>
+            <p><em>ビーチサッカーボール</em></p><br>
             <br>
-            <a href="https://www.jfa.jp/rule/beachsoccer.html">ビーチサッカー　ルール</a>
-            <p>日本サッカー協会サイト</p>
-          </div>
+            <hr class="style-two">
+            <a href="https://www.jfa.jp/rule/beachsoccer.html">ビーチサッカー　ルール</a><br>
+            <p class="sm">日本サッカー協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -620,10 +661,11 @@
           </div>
           <div class="titles">
             <h2>フットサル</h2>
-            <p><em>フットサルボール</em></p>
+            <p><em>フットサルボール</em></p><br>
             <br>
-            <a href="https://www.jfa.jp/rule/futsal.html">フットサル　ルール</a>
-            <p>日本サッカー協会サイト</p>
+            <hr class="style-two">
+            <a href="https://www.jfa.jp/rule/futsal.html">フットサル　ルール</a><br>
+            <p class="sm">日本サッカー協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -642,11 +684,15 @@
           </div>
           <div class="titles">
             <h2>フットバック</h2>
-            <p><em>ハッキーサック</em></p>
+            <p><em>ハッキーサック</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://footbag.jp/rule.html">フットバックルール</a><br>
+            <p class="sm">日本フットバック協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
-          <p>45g(0.1ポンド)程度<br>
+          <p>20～70g<br>
             中身がペレット(プラスチックの粒)、<br>サンド(砂)、(金属の粒)の3種類ある</p>
           </div>
         <div class="meta area">
@@ -661,7 +707,11 @@
           </div>
           <div class="titles">
             <h2>へディス</h2>
-            <p><em>へディス専用ボール</em></p>
+            <p><em>へディス専用ボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="http://headis.jp/about/">へディスについて</a><br>
+            <p class="sm">へディス日本版サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -678,8 +728,12 @@
             <img src="images/shotput.png" onload="imgLoaded(this)"/>
           </div>
           <div class="titles">
-            <h2>砲丸投げ</h2>
-            <p><em>砲丸</em></p>
+            <h2>砲丸投</h2>
+            <p><em>砲丸</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.sports-rule.com/track/throw/index.html#:~:text=%E7%A0%B2%E4%B8%B8%E6%8A%95%E3%81%A8%E3%80%8E%E6%8A%95%E3%80%8F%E3%81%A8,%E7%A0%B2%E4%B8%B8%E3%82%92%E6%8A%95%E3%81%92%E3%81%BE%E3%81%99%E3%80%82">砲丸投について</a><br>
+            <p class="sm">sports-rule.com</p> 
           </div>
         </div>
         <div class="meta categoryA">
@@ -701,7 +755,11 @@
           </div>
           <div class="titles">
             <h2>ホッケー(フィールドホッケー)</h2>
-            <p><em>ホッケーボール</em></p>
+            <p><em>ホッケーボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.hockey.or.jp/rules/hockey/">ホッケーについて</a><br>
+            <p class="sm">日本ホッケー協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -722,7 +780,14 @@
           </div>
           <div class="titles">
             <h2>毬(まり)</h2>
-            <p><em>毬</em></p>
+            <p><em>毬</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.hockey.or.jp/rules/hockey/">打毬(だきゅう)</a>
+            <p class="sm">宮内庁サイト</p>
+            <br>
+            <a href="http://shiraminejingu.or.jp/history/kemari/">蹴毬(けまり)</a>
+            <p class="sm">白峯神宮サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -739,8 +804,12 @@
             <img src="images/multi.png" onload="imgLoaded(this)"/>
           </div>
           <div class="titles">
-            <h2>マルチボール</h2>
-            <p><em>マルチボール</em></p>
+            <h2>マルチボール<br>(アメリカンドッジボール)</h2>
+            <p><em>マルチボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://activel.jp/ballgame/03358">マルチボールについて</a>
+            <p class="sm">Activel</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -758,7 +827,13 @@
           </div>
           <div class="titles">
             <h2>野球（軟式）</h2>
-            <p><em>軟式球</em></p>
+            <p><em>軟式球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a>
+            <p class="sm">wlbaseball.com</p><br>
+            <a href="https://mochira.com/archives/329">少年野球(軟式)ルール</a>
+            <p class="sm">mochira.com</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -778,7 +853,11 @@
           </div>
           <div class="titles"> 
             <h2>野球（硬式）</h2>
-            <p><em>硬球</em></p>
+            <p><em>硬球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a><br>
+            <p class="sm">wlbaseball.com</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -796,7 +875,11 @@
               </div>
               <div class="titles">
                 <h2>ラグビー</h2>
-                <p><em>ラグビーボール</em></p>
+                <p><em>ラグビーボール</em></p><br>
+                <br>
+                <hr class="style-two">
+                <a href="https://www.jsports.co.jp/rugby/about/guide_rule/">ラグビーとは</a><br>
+                <p class="sm">J SPORTS</p>
               </div>
             </div>
             <div class="meta categoryA">

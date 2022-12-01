@@ -13,7 +13,8 @@
 <link href="css/mixitup.css" rel="stylesheet" type="text/css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet"> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 </head>
@@ -35,13 +36,16 @@
   <!--　ナビゲーションメニュー  -->
   
   <div id="menu">
-    <a href="index.html">home</a> 
-    <a href="categoriesA.html">All</a>
-    <a href="categories1.html">あ / か</a>
-    <a href="categories2.html">さ / た</a>
-    <a href="categories3.html">な / は</a> 
-    <a href="categories4.html">ま / や / ら</a>
-
+    <div class="menuA">
+      <a href="index.html">home</a> 
+      <a href="categoriesA.html">All</a>
+      </div>
+      <div class="menuB">
+      <a href="categories1.html">あ/か</a>
+      <a href="categories2.html">さ/た</a>
+      <a href="categories3.html">な/は</a> 
+      <a href="categories4.html">ま/や/ら</a>
+      </div>
     <!-- / #menu -->
   </div>
   
@@ -80,6 +84,10 @@
           </div>
           <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
         </div>
+
+        <div class="meta categoryA">
+          詳細(重さやサイズ規格など)            
+       </div>
       
         <div class="meta area" id="SortByArea">
           <div class="middle">
@@ -91,14 +99,19 @@
       <div class="fail_element anim250">
         申し訳ありませんが、一致する条件を見つけることができませんでした。
       </div>
-      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="a1" data-area="7.6">
+
+     <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="a1" data-area="7.6">
         <div class="meta name">
           <div class="img_wrapper">
             <img src="images/ice.png" onload="imgLoaded(this)"/>
           </div>
           <div class="titles">
             <h2>アイスホッケー</h2>
-            <p><em>パック</em></p>
+            <p><em>パック</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.jihf.or.jp/knowledge/tools.php">アイスホッケー基礎知識</a><br>
+            <p class="sm">日本アイスホッケー連盟サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -116,7 +129,11 @@
           </div>
           <div class="titles">
             <h2>アメリカンフットボール</h2>
-            <p><em>アメリカンフットボール</em></p>
+            <p><em>アメリカンフットボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://panasonic.co.jp/ew/go-go-impulse/cheer/cheermanual/beginner/rule/index.html">アメリカンフットボール　ルール</a><br>
+            <p class="sm">Panasonicサイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -134,7 +151,11 @@
           </div>
           <div class="titles">
             <h2>ウィッフルボール</h2>
-            <p><em>ウィッフルボール</em></p>
+            <p><em>ウィッフルボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.gh-japan.co.jp/wiffle-lp/">ウィッフルボールとは</a><br>
+            <p class="sm">WIFFLE Ball(ウィッフルボール)サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -153,7 +174,11 @@
           </div>
           <div class="titles">
             <h2>カーリング</h2>
-            <p><em>ストーン</em></p>
+            <p><em>ストーン</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www3.nhk.or.jp/sports/story/1424/">カーリング基本ルール</a><br>
+            <p class="sm">NHKsportsサイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -172,7 +197,11 @@
           </div>
           <div class="titles">
             <h2>クリケット</h2>
-            <p><em>クリケットボール</em></p>
+            <p><em>クリケットボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://cricket.or.jp/about-cricket">クリケットとは</a><br>
+            <p class="sm">日本クリケット協会サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -190,7 +219,11 @@
           </div>
           <div class="titles">
             <h2>ゲートボール</h2>
-            <p><em>ゲートボール</em></p>
+            <p><em>ゲートボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://gateball.or.jp/play/play_01.html">ゲートボールとは</a><br>
+            <p class="sm">日本ゲートボール連合サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -208,7 +241,11 @@
           </div>
           <div class="titles">
             <h2>ゴルフ</h2>
-            <p><em>ゴルフボール</em></p>
+            <p><em>ゴルフボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.rere.jp/beginners/4584/">ゴルフ基本ルール</a><br>
+            <p class="sm">ビギナーズ></p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -226,7 +263,11 @@
           </div>
           <div class="titles">
             <h2>コーフボール</h2>
-            <p><em>バスケットボール</em></p>
+            <p><em>バスケットボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://korfball.jp/rule/">コーフボール　ルール</a><br>
+            <p class="sm">日本コーフボール協会</p>
           </div>
         </div>
         <div class="meta categoryA">

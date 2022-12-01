@@ -49,9 +49,10 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
 	left: 0; /*左からの距離(positionで指定している場合に適用)*/
 	top: 30px; /*上からの距離(positionで指定している場合に適用)*/
+	
 	line-height: 30px; /*行の高さ指定*/
-	font-family: "Nico Moji",niko; /*Webフォントの種類指定*/
-	font-size: 2.5em; /* フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-family: "Nico Moji"; /*Webフォントの種類指定*/
+	font-size: 4em; /* フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
@@ -67,18 +68,27 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 
 #menu {
 	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
-	left: 250px; /*左からの距離(positionで指定している場合に適用)*/
+	display: flex;
+	justify-content: space-around;
+	left: 210px; /*左からの距離(positionで指定している場合に適用)*/
 	top: 20px; /*上からの距離(positionで指定している場合に適用)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
 #menu a {
 	color: #555; /*文字色指定*/
-	font-family: 'IM Fell Great Primer SC', serif; /*Webフォントの種類指定*/
-	font-size: 1.8em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-family: "Nico Moji"; /*Webフォントの種類指定*/
+	font-size: 2.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	text-transform: capitalize; /*フォントの大文字小文字指定(capitalizeは先頭文字を大文字)*/
 	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
 	margin-right: 30px; /*ボックス外側右の余白*/
+}
+
+#menu .menuA {
+	letter-spacing: -0.1em;
+}
+#menu .menuB{
+	letter-spacing: 0.3em;
 }
 
 #menu a:hover, #menu a.active {
@@ -97,13 +107,22 @@ hr.style-one {
 	background-image:      -o-linear-gradient(left, #eee, #999, #eee); /*背景画像指定*/
 }
 
+hr.style-two{
+	border-width: 1.2px;
+	border-style: dashed;
+	height: 0px; /*領域の高さ指定*/
+	width: 270px;
+	border-color: #b9c8ca;
+}
+
 /* ----- h1 ----- */
 
 h1 {
 	margin-bottom: 50px; /*ボックス外側下の余白*/
 	color: #777; /*文字色指定*/
 	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
-	font-size: 2.2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-family: "Nico Moji"; /*Webフォントの種類指定*/
+	font-size: 3.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
@@ -174,6 +193,8 @@ h1 {
 
 .message {
     position: sticky;
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"; /*フォントの種類指定(左から優先順位)*/
+	font-size: 1.4em;
 }
 .message span.remark {
     display: none;
@@ -185,7 +206,7 @@ h1 {
     display: block;
     line-height: 2em;
     margin: 10em;
-    padding: 2em;
+    padding: 1em;
     position: absolute;
     top: 200px;
     width: 12em;

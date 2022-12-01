@@ -13,7 +13,8 @@
 <link href="css/mixitup.css" rel="stylesheet" type="text/css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet"> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 </head>
@@ -33,13 +34,16 @@
   <!--　ナビゲーションメニュー  -->
   
   <div id="menu">
-    <a href="index.html">home</a> 
-    <a href="categoriesA.html">All</a>
-    <a href="categories1.html">あ / か</a>
-    <a href="categories2.html">さ / た</a>
-    <a href="categories3.html">な / は</a> 
-    <a href="categories4.html">ま / や / ら</a>
-
+    <div class="menuA">
+      <a href="index.html">home</a> 
+      <a href="categoriesA.html">All</a>
+      </div>
+      <div class="menuB">
+      <a href="categories1.html">あ/か</a>
+      <a href="categories2.html">さ/た</a>
+      <a href="categories3.html">な/は</a> 
+      <a href="categories4.html">ま/や/ら</a>
+      </div>
     <!-- / #menu -->
   </div>
   
@@ -78,6 +82,10 @@
           </div>
           <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
         </div>
+
+        <div class="meta categoryA">
+          詳細(重さやサイズ規格など)            
+       </div>
       
         <div class="meta area" id="SortByArea">
           <div class="middle">
@@ -97,7 +105,14 @@
           </div>
           <div class="titles">
             <h2>毬(まり)</h2>
-            <p><em>毬</em></p>
+            <p><em>毬</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.hockey.or.jp/rules/hockey/">打毬(だきゅう)</a>
+            <p class="sm">宮内庁サイト</p>
+            <br>
+            <a href="http://shiraminejingu.or.jp/history/kemari/">蹴毬(けまり)</a>
+            <p class="sm">白峯神宮サイト</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -114,8 +129,12 @@
             <img src="images/multi.png" onload="imgLoaded(this)"/>
           </div>
           <div class="titles">
-            <h2>マルチボール</h2>
-            <p><em>マルチボール</em></p>
+            <h2>マルチボール<br>(アメリカンドッジボール)</h2>
+            <p><em>マルチボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://activel.jp/ballgame/03358">マルチボールについて</a>
+            <p class="sm">Activel</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -133,7 +152,13 @@
           </div>
           <div class="titles">
             <h2>野球（軟式）</h2>
-            <p><em>軟式球</em></p>
+            <p><em>軟式球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a>
+            <p class="sm">wlbaseball.com</p><br>
+            <a href="https://mochira.com/archives/329">少年野球(軟式)ルール</a>
+            <p class="sm">mochira.com</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -153,7 +178,11 @@
           </div>
           <div class="titles"> 
             <h2>野球（硬式）</h2>
-            <p><em>硬球</em></p>
+            <p><em>硬球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a><br>
+            <p class="sm">wlbaseball.com</p>
           </div>
         </div>
         <div class="meta categoryA">
@@ -171,7 +200,11 @@
               </div>
               <div class="titles">
                 <h2>ラグビー</h2>
-                <p><em>ラグビーボール</em></p>
+                <p><em>ラグビーボール</em></p><br>
+                <br>
+                <hr class="style-two">
+                <a href="https://www.jsports.co.jp/rugby/about/guide_rule/">ラグビーとは</a><br>
+                <p class="sm">J SPORTS</p>
               </div>
             </div>
             <div class="meta categoryA">

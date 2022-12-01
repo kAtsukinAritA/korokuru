@@ -269,7 +269,7 @@
 /* LIST VIEW STYLES */
 
 #Parks.list .list_header {
-	height: 38px;
+	height: 50px;
 	line-height: 38px;
 	background: #f0ebe5;
 	text-align: right;
@@ -346,16 +346,10 @@
 	;
 }
 
-#Parks.list .list_header .meta .meta.categoryA {
-	display: inline-block;
-	vertical-align: middle;
-	margin-bottom: 15px;
-}
-
 #Parks.list .list_header .meta .middle {
 	display: inline-block;
 	vertical-align: middle;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 }
 
 #Parks.list .meta.categoryA {
@@ -363,11 +357,14 @@
 	width: 300px;
 	font-size: 16px;
 	text-align: center;
-	line-height: 100px;
+	line-height: 48px;
 	border-left: 1px solid #d7d7d7;
 	height: 100%;
 	vertical-align: top;
 }
+
+
+
 #Parks.list .meta {
 	display: inline-block;
 	width: 150px;
@@ -429,13 +426,20 @@
 	text-transform: uppercase;
 	color: #66abec;
 	;
-	letter-spacing: 2px;
-	margin-bottom: 3px;
+	letter-spacing: 1px;
+	margin-top: 1px;
+	margin-bottom: 2px;
 	line-height: 1.2 !important;
 }
 
 #Parks.list .titles p {
 	text-indent: -2px;
+}
+
+#Parks.list .titles .sm {
+	text-indent: -2px;
+	font-size: 11px;
+	color: rgb(148, 148, 148);
 }
 
 /* GRID VIEW STYLES */
