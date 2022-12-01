@@ -274,7 +274,7 @@
 	background: #f0ebe5;
 	text-align: right;
 	color: #59514c;
-	font-size: 16px;
+	font-size: 18px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -354,21 +354,31 @@
 
 #Parks.list .meta.categoryA {
 	display: inline-block;
-	width: 300px;
-	font-size: 16px;
+	width: 330px;
+	font-size: 18px;
 	text-align: center;
 	line-height: 48px;
+	
 	border-left: 1px solid #d7d7d7;
 	height: 100%;
 	vertical-align: top;
 }
 
+#Parks.list .meta.categoryA p {
+	display: inline-block;
+	width: 320px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.4;
+	height: 90%;
+	vertical-align: top;
+}
 
 
 #Parks.list .meta {
 	display: inline-block;
-	width: 150px;
-	font-size: 16px;
+	width: 165px;
+	font-size: 18px;
 	text-align: center;
 	line-height: 100px;
 	border-left: 1px solid #d7d7d7;
@@ -382,7 +392,7 @@
 	padding: 18px 0 14px;
 	border-bottom: 1px solid #d7d7d7;
 	text-align: right;
-	height: 99px;
+	height: 150px;
 	width: 100%;
 	line-height: 99px;
 	background: #f9f6f0;
@@ -403,16 +413,15 @@
 #Parks.list .mix .meta li {
 	margin-bottom: 5px;
 	padding: 2px 0;
-	font-size: 16px !important;
+	font-size: 18px !important;
 }
 
 #Parks.list .img_wrapper {
 	display: inline-block;
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 	vertical-align: top;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 15px 20px;
 }
 
 #Parks.list .titles {
@@ -422,24 +431,32 @@
 
 #Parks.list .titles h2 {
 	font-weight: 700;
-	font-size: 18px !important;
+	font-size: 22px !important;
 	text-transform: uppercase;
 	color: #66abec;
 	;
 	letter-spacing: 1px;
-	margin-top: 1px;
+	margin-top: 12px;
 	margin-bottom: 2px;
 	line-height: 1.2 !important;
 }
 
 #Parks.list .titles p {
-	text-indent: -2px;
+	text-indent: 0px;
+	line-height: 1.5;
+	font-size: 20px;
+}
+
+#Parks.list .titles a {
+	text-indent: 0px;
+	font-size: 20px;
 }
 
 #Parks.list .titles .sm {
-	text-indent: -2px;
-	font-size: 11px;
+	text-indent: 0px;
+	font-size: 15px;
 	color: rgb(148, 148, 148);
+	line-height: 1.8;
 }
 
 /* GRID VIEW STYLES */
@@ -507,6 +524,7 @@
 	font-weight: 300;
 	text-indent: -2px;
 }
+
  @media (max-width: 500px) {
 
 #Parks.grid .mix {

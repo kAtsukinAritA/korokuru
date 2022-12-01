@@ -129,7 +129,7 @@ h1 {
 /* ----- レイアウト ----- */
 
 #container { /*container(入れ物、容器)の中に各要素(ボックス)を配置*/
-	width: 900px; /*幅指定*/
+	width: 1000px; /*幅指定*/
 	margin: 0 auto; /*ボックス外側の余白(値2つは左から上下,左右の値(左右autoで中央配置))*/
 }
 
@@ -167,6 +167,12 @@ h1 {
 #content ul li {
 	padding: 10px 0; /*ボックス内側の余白(値2つは左から上下,左右の値)*/
 	font-size: 1.2em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+}
+
+#container .content .ms h2{
+	font-size: 8px;
+	text-align: center;
+	margin-top: 50px;
 }
 
 #content a:hover img {
