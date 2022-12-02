@@ -24,6 +24,8 @@
 
     position: absolute;
     top: 50%;
+    z-index: 999;
+
 
     display: block;
 
@@ -67,11 +69,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 30px; /*矢印の大きさ*/
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #66abec;;  /*矢印色*/
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,11 +81,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 25px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 25px;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +99,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 25px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 25px;
 }
 .slick-next:before
 {
