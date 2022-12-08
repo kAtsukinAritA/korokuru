@@ -72,7 +72,7 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 	justify-content: space-around;
 	left: 250px; /*左からの距離(positionで指定している場合に適用)*/
 	top: 20px; /*上からの距離(positionで指定している場合に適用)*/
-	text-align: start; /*行の水平方向の揃え方(centerは中央揃え)*/
+	text-align: left; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
 #menu a {
