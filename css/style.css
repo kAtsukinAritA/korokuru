@@ -48,11 +48,11 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 #logo {
 	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
 	left: 0; /*左からの距離(positionで指定している場合に適用)*/
-	top: 30px; /*上からの距離(positionで指定している場合に適用)*/
+	top: 60px; /*上からの距離(positionで指定している場合に適用)*/
 	
-	line-height: 30px; /*行の高さ指定*/
+	line-height: 35px; /*行の高さ指定*/
 	font-family: "Nico Moji"; /*Webフォントの種類指定*/
-	font-size: 4em; /* フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-size: 4.8em; /* フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
 	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
@@ -70,9 +70,9 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
 	display: flex;
 	justify-content: space-around;
-	left: 210px; /*左からの距離(positionで指定している場合に適用)*/
+	left: 250px; /*左からの距離(positionで指定している場合に適用)*/
 	top: 20px; /*上からの距離(positionで指定している場合に適用)*/
-	text-align: center; /*行の水平方向の揃え方(centerは中央揃え)*/
+	text-align: start; /*行の水平方向の揃え方(centerは中央揃え)*/
 }
 
 #menu a {
