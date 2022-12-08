@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>ころくる</title>
+<meta name="Description" content="ボールなどスポーツで使用するまるいものを紹介・比較するサイト" />
+<meta name="Keywords" content="球技,ボール,ボール比較,スポーツ," />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" type="img/x-icon" href="favicon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/mixitup.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+</head>
+
+<body>
+
+
+<!--　ヘッダー　-->
+
+<div id="header">
+  
+  <!-- ロゴ　-->
+  <div id="logo">
+    <a href="index.html">ころくる</a> <!-- / #logo -->
+  </div>
+  
+  <!--　ナビゲーションメニュー  -->
+  
+  <div id="menu">
+    <div class="menuA">
+      <a href="index.html">home</a> 
+      <a href="konosai.html">このサイトについて</a>
+      <br>
+      <a href="categoriesA.html">All</a>
+      <a href="categoriesa1.html">あ</a>
+      <a href="categoriesb.html">か</a>
+      <a href="categoriesc.html">さ</a>
+      <a href="categoriesd.html">た</a>
+      <a href="categoriese.html">な</a>
+      <a href="categoriesf.html">は</a> 
+      <a href="categoriesg.html">ま</a>
+      <a href="categoriesh.html">や</a>
+      <a href="categoriesi.html">ら</a>
+    </div>
+    <!-- / #menu -->
+  </div>
+  
+  <!-- / #header -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ここからメインの内容　-->
+
+<div id="container">
+  <div id="content">
+  
+    <h1>ま ~ も</h1>
+    
+    <div class="controls just">
+      <div class="group" id="Sorts">
+        <div class="button active" id="ToList">
+          <i></i>詳細
+        </div>
+        <div class="button" id="ToGrid">
+          <i></i>画像
+        </div>
+      </div>
+      <div class="group" id="Filters">
+       
+      </div>
+    </div>
+
+      <ul id="Parks" class="just">
+        <div class="list_header">
+
+          <div class="meta name active desc" id="SortByName">
+            <div class="middle">
+              競技名
+            </div>
+            <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
+          </div>
+
+          <div class="meta categoryA">
+             詳細(重さやサイズ規格など)            
+          </div>
+
+          <div class="meta area" id="SortByArea">
+            <div class="middle">
+              直径
+            </div>
+            <span class="sort anim150 asc" data-sort="data-area" data-order="asc"></span> <span class="sort anim150 desc" data-sort="data-area" data-order="desc"></span>
+          </div>
+        </div>
+
+
+        <div class="fail_element anim250">
+          申し訳ありませんが、一致する条件を見つけることができませんでした。
+        </div>
+
+
+
+
+      <!--　ま　-->
+      <li class="mix A11111 B11111 B22222 B33333" data-name="g1" data-area="10.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/mari().png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>毬(まり)</h2>
+            <p><em>毬</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://www.hockey.or.jp/rules/hockey/">打毬(だきゅう)</a>
+            <p class="sm">宮内庁サイト</p>
+            <br>
+            <a href="http://shiraminejingu.or.jp/history/kemari/">蹴毬(けまり)</a>
+            <p class="sm">白峯神宮サイト</p>
+          </div>
+        </div>
+        <div class="meta categoryA">
+          <p>100g程度</p>
+        </div>
+        <div class="meta area">
+          <p>10~16cm</p>
+        </div>
+      </li>
+
+      <li class="mix A11111 B11111 B22222 B33333" data-name="g2" data-area="20.0">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img src="images/multi.png" onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>マルチボール<br>(アメリカンドッジボール)</h2>
+            <p><em>マルチボール</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://activel.jp/ballgame/03358">マルチボールについて</a>
+            <p class="sm">Activel</p>
+          </div>
+        </div>
+        <div class="meta categoryA">
+          <p>布製</p>
+        </div>
+        <div class="meta area">
+          <p>20cm</p>
+        </div>
+      </li>
+
+
+    
+
+    </ul>
+    
+    <!-- / #content -->
+  </div>
+  
+  <!-- / #container -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ページの下部分　-->
+<div id="footer">
+  <p>Copyright(C) 2013 サイト名 All Rights Reserved. </p>
+  <!-- / #footer -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>ころくる</title>
+<meta name="Description" content="ボールなどスポーツで使用するまるいものを紹介・比較するサイト" />
+<meta name="Keywords" content="球技,ボール,ボール比較,スポーツ," />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" type="img/x-icon" href="favicon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/mixitup.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+</head>
+
+<body>
+
+
+<!--　ヘッダー　-->
+
+<div id="header">
+  
+  <!-- ロゴ　-->
+  <div id="logo">
+    <a href="index.html">ころくる</a> <!-- / #logo -->
+  </div>
+  
+  <!--　ナビゲーションメニュー  -->
+
+  <div id="menu">
+    <div class="menuA">
+      <a href="index.html">home</a> 
+      <a href="konosai.html">このサイトについて</a>
+      <br>
+      <a href="categoriesA.html">All</a>
+      <a href="categoriesa1.html">あ</a>
+      <a href="categoriesb.html">か</a>
+      <a href="categoriesc.html">さ</a>
+      <a href="categoriesd.html">た</a>
+      <a href="categoriese.html">な</a>
+      <a href="categoriesf.html">は</a> 
+      <a href="categoriesg.html">ま</a>
+      <a href="categoriesh.html">や</a>
+      <a href="categoriesi.html">ら</a>
+    </div>
+    <!-- / #menu -->
+  </div>
+  
+  <!-- / #header -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ここからメインの内容　-->
+
+<div id="container">
+  <div id="content">
+  
+    <h1>や ~ よ</h1>
+    
+    <div class="controls just">
+      <div class="group" id="Sorts">
+        <div class="button active" id="ToList">
+          <i></i>詳細
+        </div>
+        <div class="button" id="ToGrid">
+          <i></i>画像
+        </div>
+      </div>
+      <div class="group" id="Filters">
+       
+      </div>
+    </div>
+
+      <ul id="Parks" class="just">
+        <div class="list_header">
+
+          <div class="meta name active desc" id="SortByName">
+            <div class="middle">
+              競技名
+            </div>
+            <span class="sort anim150 asc active" data-sort="data-name" data-order="desc"></span> <span class="sort anim150 desc" data-sort="data-name" data-order="asc"></span>
+          </div>
+
+          <div class="meta categoryA">
+             詳細(重さやサイズ規格など)            
+          </div>
+
+          <div class="meta area" id="SortByArea">
+            <div class="middle">
+              直径
+            </div>
+            <span class="sort anim150 asc" data-sort="data-area" data-order="asc"></span> <span class="sort anim150 desc" data-sort="data-area" data-order="desc"></span>
+          </div>
+        </div>
+
+
+        <div class="fail_element anim250">
+          申し訳ありませんが、一致する条件を見つけることができませんでした。
+        </div>
+
+
+
+      <!--　や　-->
+      <li class="mix A33333 B11111 B22222 B33333 B44444" data-name="h1" data-area="6.8">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="base01" src="images/base01().png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles">
+            <h2>野球（軟式）</h2>
+            <p><em>軟式球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a>
+            <p class="sm">wlbaseball.com</p><br>
+            <a href="https://mochira.com/archives/329">少年野球(軟式)ルール</a>
+            <p class="sm">mochira.com</p>
+          </div>
+        </div>
+        <div class="meta categoryA">
+          <p>J号6.85~6.95cm,128~131g(小学生)<br>
+            M号7.15~7.25cm,136~139g<br>(一般、中学生)<br>
+            H号7.15~7.25cm,141~144g<br>(大学生)</p>
+        </div>
+        <div class="meta area">
+          <p>6.85~7.25cm</p>
+        </div>
+      </li>
+
+      <li class="mix A22222 B22222" data-name="h2" data-area="7.2">
+        <div class="meta name">
+          <div class="img_wrapper">
+            <img id="base01" src="images/base02().png"onload="imgLoaded(this)"/>
+          </div>
+          <div class="titles"> 
+            <h2>野球（硬式）</h2>
+            <p><em>硬球</em></p><br>
+            <br>
+            <hr class="style-two">
+            <a href="https://wlbaseball.com/90">野球基本ルール</a><br>
+            <p class="sm">wlbaseball.com</p>
+          </div>
+        </div>
+        <div class="meta categoryA">
+          <p>141~148g</p>
+        </div>
+        <div class="meta area">
+          <p>7.29〜7.48cm</p>
+        </div>
+      </li>
+
+
+
+    
+
+    </ul>
+    
+    <!-- / #content -->
+  </div>
+  
+  <!-- / #container -->
+</div>
+
+<!-- / 水平線 -->
+<hr class="style-one">
+
+<!--　ページの下部分　-->
+<div id="footer">
+  <p>Copyright(C) 2013 サイト名 All Rights Reserved. </p>
+  <!-- / #footer -->
+</div>
+
+</body>
+</html>

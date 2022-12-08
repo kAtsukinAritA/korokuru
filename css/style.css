@@ -82,13 +82,14 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 	text-transform: capitalize; /*フォントの大文字小文字指定(capitalizeは先頭文字を大文字)*/
 	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
 	margin-right: 30px; /*ボックス外側右の余白*/
+	letter-spacing: 0em;
 }
 
 #menu .menuA {
 	letter-spacing: -0.1em;
 }
 #menu .menuB{
-	letter-spacing: 0.3em;
+	letter-spacing: 0em;
 }
 
 #menu a:hover, #menu a.active {
