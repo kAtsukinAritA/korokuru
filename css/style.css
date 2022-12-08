@@ -38,7 +38,7 @@ a:hover { /*リンクの文字設定(マウスをのせた時)*/
 
 #header {
 	position: relative; /*ボックスの配置方法(relativeは相対位置配置)*/
-	height: 80px; /*領域の高さ指定*/
+	height: 135px; /*領域の高さ指定*/
 	width: 900px; /*幅指定*/
 	margin: 10px auto; /*ボックス外側の余白(値2つは左から上下,左右の値)*/
 }
@@ -176,13 +176,13 @@ h1 {
 	color: rgb(122, 122, 122);
 }
 
-#content .ms h1{
-	font-size: 22px;
+#content .ms p{
+	font-size: 28px;
 	text-align: center;
 	line-height: 1.3;
 	
 	font-family: "Nico Moji"; /*Webフォントの種類指定*/
-	color: rgb(102, 102, 102);
+	color: rgb(85, 85, 85);
 }
 #content a:hover img {
 	border: solid 1px #c9171e; /*境界線の一括指定(solidは1本線,線の太さ,線の色)*/
