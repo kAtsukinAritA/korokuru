@@ -175,12 +175,14 @@ h1 {
 #content .ms h1{
 	margin-top: 65px;
 	margin-bottom: 0px;
+	padding: 15px 0px;
 	font-size: 3.5empx;
 	text-align: center;
 	font-family: "Nico Moji";
-	color: rgb(102, 192, 212);
+	color: rgb(105, 125, 130);
 	background-color: rgb(255, 255, 255);
-	background: url("images/mshi.png") no-repeat center center;
+	background: url("../images/mshi.png") no-repeat center -75px;
+	background-size: 360px 280px;
 }
 
 #content .ms h2{
