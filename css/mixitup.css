@@ -481,7 +481,7 @@
 	display: none;
 	opacity: 0;
 	position: relative;
-	width: 48.5%;
+	width: 48%;
 	padding-top: 26%;
 	margin-bottom: 3%;
 }
@@ -490,7 +490,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: #f0ebe5;
 }
 
 #Parks.grid .titles {
@@ -500,7 +500,7 @@
 	height: auto;
 	margin-top: 75%;
 	margin: 53.5% auto 0;
-	top: -70px;
+	top: -155px;
 	z-index: 1;
 	padding: 10px 0;
 	background: #fff;
